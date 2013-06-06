@@ -1,0 +1,186 @@
+<html>
+<head>
+<script type="text/javascript" language="javascript" src="dom.js"></script>
+<link rel="stylesheet" type="text/css" href="dom.css" />
+</head>
+<body>
+<div>
+
+<script>
+solution_str='SHRINEMAPTNADOREORATORDINPUCENEEDSTERNLIBERETROMEGAVEBUDCRATERELDERNMYESUTTERS';   //SOLUTION-STRING
+</script>
+<input type=button value="CHECK SOLUTION" onClick="check_Solution(solution_str)">
+<input type=button value="FILL SOLUTION" onClick="fill_Solution(solution_str)"><font color='red' face=verdana><u>FILL IN CAPITAL LETTERS</u></font>
+
+
+</div>
+<div>
+<table class="crossword" style="float: right; position: relative" hspace=1000>
+
+<tr>
+<td class=cell id=r1c1 ><sup>1</sup><br><input type=text id=square1 name=square1 size=1 maxlength=1 >
+<td class=cell id=r1c2 ><sup>&nbsp;</sup><br><input type=text id=square2 name=square2 size=1 maxlength=1 >
+<td class=cell id=r1c3 ><sup>&nbsp;</sup><br><input type=text id=square3 name=square3 size=1 maxlength=1 >
+<td class=cell id=r1c4 ><sup>2</sup><br><input type=text id=square4 name=square4 size=1 maxlength=1 >
+<td class=cell id=r1c5 ><sup>&nbsp;</sup><br><input type=text id=square5 name=square5 size=1 maxlength=1 >
+<td class=cell id=r1c6 ><sup>3</sup><br><input type=text id=square6 name=square6 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r1c7 ><sup>4</sup><br><input type=text id=square7 name=square7 size=1 maxlength=1 >
+<td class=cell id=r1c8 ><sup>5</sup><br><input type=text id=square8 name=square8 size=1 maxlength=1 >
+<td class=cell id=r1c9 ><sup>6</sup><br><input type=text id=square9 name=square9 size=1 maxlength=1 >
+
+<tr>
+<td class=cell id=r2c1 ><sup>&nbsp;</sup><br><input type=text id=square10 name=square10 size=1 maxlength=1 >
+<td class=black>
+<td class=black>
+<td class=cell id=r2c2 ><sup>&nbsp;</sup><br><input type=text id=square11 name=square11 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r2c3 ><sup>7</sup><br><input type=text id=square12 name=square12 size=1 maxlength=1 >
+<td class=cell id=r2c4 ><sup>&nbsp;</sup><br><input type=text id=square13 name=square13 size=1 maxlength=1 >
+<td class=cell id=r2c5><sup>&nbsp;</sup><br><input type=text id=square14 name=square14 size=1 maxlength=1 >
+<td class=cell id=r2c6 ><sup>&nbsp;</sup><br><input type=text id=square15 name=square15 size=1 maxlength=1 >
+<td class=cell id=r2c7 ><sup>&nbsp;</sup><br><input type=text id=square16 name=square16 size=1 maxlength=1 >
+
+<tr>
+<td class=cell id=r3c1><sup>8</sup><br><input type=text id=square17 name=square17 size=1 maxlength=1>
+<td class=cell id=r3c2 ><sup>9</sup><br><input type=text id=square18 name=square18 size=1 maxlength=1 >
+<td class=cell id=r3c3 ><sup>10</sup><br><input type=text id=square19 name=square19 size=1 maxlength=1 >
+<td class=cell id=r3c4 ><sup>&nbsp;</sup><br><input type=text id=square20 name=square20 size=1 maxlength=1 >
+<td class=cell id=r3c5 ><sup>&nbsp</sup><br><input type=text id=square21 name=square21 size=1 maxlength=1 >
+<td class=cell id=r3c6 ><sup>&nbsp;</sup><br><input type=text id=square22 name=square22 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r3c7 ><sup>11</sup><br><input type=text id=square23 name=square23 size=1 maxlength=1 >
+<td class=cell id=r3c8 ><sup>&nbsp;</sup><br><input type=text id=square24 name=square24 size=1 maxlength=1 >
+<td class=cell id=r3c9 ><sup>&nbsp;</sup><br><input type=text id=square25 name=square25 size=1 maxlength=1 >
+
+<tr>
+<td class=cell id=r4c1 ><sup>12</sup><br><input type=text id=square26 name=square26 size=1 maxlength=1 >
+<td class=cell id=r4c2 ><sup>&nbsp;</sup><br><input type=text id=square27 name=square27 size=1 maxlength=1 >
+<td class=cell id=r4c3 ><sup>&nbsp;</sup><br><input type=text id=square28 name=square28 size=1 maxlength=1 >
+<td class=cell id=r4c4><sup>&nbsp;</sup><br><input type=text id=square29 name=square29 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r4c5 ><sup>13</sup><br><input type=text id=square30 name=square30 size=1 maxlength=1 >
+<td class=cell id=r4c6 ><sup>14</sup><br><input type=text id=square31 name=square31 size=1 maxlength=1 >
+<td class=cell id=r4c7 ><sup>&nbsp;</sup><br><input type=text id=square32 name=square32 size=1 maxlength=1 >
+<td class=cell id=r4c8 ><sup>&nbsp;</sup><br><input type=text id=square33 name=square33 size=1 maxlength=1 >
+<td class=black>
+<tr>
+<td class=cell id=r5c1 ><sup>15</sup><br><input type=text id=square34 name=square34 size=1 maxlength=1 >
+<td class=cell id=r5c2 ><sup>&nbsp;</sup><br><input type=text id=square35 name=square35 size=1 maxlength=1 >
+<td class=cell id=r5c3 ><sup>&nbsp;</sup><br><input type=text id=square36 name=square36 size=1 maxlength=1 >
+<td class=cell id=r5c4 ><sup>&nbsp;</sup><br><input type=text id=square37 name=square37 size=1 maxlength=1 >
+<td class=cell id=r5c5 ><sup>&nbsp;</sup><br><input type=text id=square38 name=square38 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r5c6 ><sup>&nbsp;</sup><br><input type=text id=square39 name=square39 size=1 maxlength=1 >
+<td class=black>
+<td class=black>
+<td class=black>
+<tr>
+<td class=black>
+<td class=black>
+<td class=black>
+<td class=cell id=r6c1 ><sup>&nbsp;</sup><br><input type=text id=square40 name=square40 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r6c2 ><sup>16</sup><br><input type=text id=square41 name=square41 size=1 maxlength=1 >
+<td class=cell id=r6c3 ><sup>&nbsp;</sup><br><input type=text id=square42 name=square42 size=1 maxlength=1 >
+<td class=cell id=r6c4 ><sup>17</sup><br><input type=text id=square43 name=square43 size=1 maxlength=1 >
+<td class=cell id=r6c5 ><sup>18</sup><br><input type=text id=square44 name=square44 size=1 maxlength=1>
+<td class=cell id=r6c6 ><sup>19</sup><br><input type=text id=square45 name=square45 size=1 maxlength=1 >
+
+<tr>
+<td class=black>
+<td class=cell id=r7c1 ><sup>20</sup><br><input type=text id=square46 name=square46 size=1 maxlength=1 >
+<td class=cell id=r7c2 ><sup>21</sup><br><input type=text id=square47 name=square47 size=1 maxlength=1 >
+<td class=cell id=r7c3 ><sup>&nbsp;</sup><br><input type=text id=square48 name=square48 size=1 maxlength=1 >
+<td class=cell id=r7c4 ><sup>22</sup><br><input type=text id=square49 name=square49 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r7c5 ><sup>23</sup><br><input type=text id=square50 name=square50 size=1 maxlength=1 >
+<td class=cell id=r7c6 ><sup>&nbsp;</sup><br><input type=text id=square51 name=square51 size=1 maxlength=1 >
+<td class=cell id=r7c7 ><sup>&nbsp</sup><br><input type=text id=square52 name=square52 size=1 maxlength=1 >
+<td class=cell id=r7c8 ><sup>&nbsp;</sup><br><input type=text id=square53 name=square53 size=1 maxlength=1 >
+
+<tr>
+<td class=cell id=r8c1 ><sup>24</sup><br><input type=text id=square54 name=square54 size=1 maxlength=1 >
+<td class=cell id=r8c2 ><sup>&nbsp;</sup><br><input type=text id=square55 name=square55 size=1 maxlength=1 >
+<td class=cell id=r8c3 ><sup>&nbsp;</sup><br><input type=text id=square56 name=square56 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r8c4 ><sup>25</sup><br><input type=text id=square57 name=square57 size=1 maxlength=1 >
+<td class=cell id=r8c5 ><sup>&nbsp;</sup><br><input type=text id=square58 name=square58 size=1 maxlength=1 >
+<td class=cell id=r8c6 ><sup>&nbsp;</sup><br><input type=text id=square59 name=square59 size=1 maxlength=1 >
+<td class=cell id=r8c7 ><sup>&nbsp;</sup><br><input type=text id=square60 name=square60 size=1 maxlength=1 >
+<td class=cell id=r8c8 ><sup>&nbsp;</sup><br><input type=text id=square61 name=square61 size=1 maxlength=1 >
+<td class=cell id=r8c9 ><sup>&nbsp;</sup><br><input type=text id=square62 name=square62 size=1 maxlength=1 >
+<tr>
+<td class=cell id=r9c1 ><sup>26</sup><br><input type=text id=square63 name=square63 size=1 maxlength=1 >
+<td class=cell id=r9c2 ><sup>&nbsp;</sup><br><input type=text id=square64 name=square64 size=1 maxlength=1 >
+<td class=cell id=r9c3 ><sup>&nbsp;</sup><br><input type=text id=square65 name=square65 size=1 maxlength=1 >
+<td class=cell id=r9c4 ><sup>&nbsp;</sup><br><input type=text id=square66 name=square66 size=1 maxlength=1 >
+<td class=cell id=r9c5 ><sup>&nbsp;</sup><br><input type=text id=square67 name=square67 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r9c6 ><sup>&nbsp</sup><br><input type=text id=square68 name=square68 size=1 maxlength=1 >
+<td class=black>
+<td class=black>
+<td class=cell id=r9c7 ><sup>&nbsp;</sup><br><input type=text id=square69 name=square69 size=1 maxlength=1 >
+
+<tr>
+<td class=cell id=r10c1 ><sup>27</sup><br><input type=text id=square70 name=square70 size=1 maxlength=1 >
+<td class=cell id=r10c2 ><sup>&nbsp;</sup><br><input type=text id=square71 name=square71 size=1 maxlength=1 >
+<td class=cell id=r10c3 ><sup>&nbsp;</sup><br><input type=text id=square72 name=square72 size=1 maxlength=1 >
+<td class=black>
+<td class=cell id=r10c4 ><sup>28</sup><br><input type=text id=square73 name=square73 size=1 maxlength=1 >
+<td class=cell id=r10c5 ><sup>&nbsp;</sup><br><input type=text id=square74 name=square74 size=1 maxlength=1 >
+<td class=cell id=r10c6 ><sup>&nbsp;</sup><br><input type=text id=square75 name=square75 size=1 maxlength=1 >
+<td class=cell id=r10c7 ><sup>&nbsp;</sup><br><input type=text id=square76 name=square76 size=1 maxlength=1 >
+<td class=cell id=r10c8 ><sup>&nbsp;</sup><br><input type=text id=square77 name=square77 size=1 maxlength=1 >
+<td class=cell id=r10c9 ><sup>&nbsp;</sup><br><input type=text id=square78 name=square78 size=1 maxlength=1 >
+
+
+</table>
+</div>
+<div style="position:right;top:5px; clear: none; background-color: #ffffff">
+<h3>Across</h3>
+<ol>
+<li value=1>Hallowed Place
+<li value=4>Travel Guide
+<li value=7>Worship
+<li value=8>Public speaker                                                <!-- CLUES-->     
+<li value=11>Clamour
+<li value=12>Brownish-Purple                                              <!-- CLUES--> 
+<li value=13>Require
+<li value=15>Part of a Ship
+<li>Headwear                                                              <!-- CLUES-->  
+<li value=20>Eternal City
+<li value=23>Donated
+<li value=24>Rudimentary shoot
+<li value=25>Mouth of Volcano
+<li>Chruch office holder.
+<li>Acceptance
+<li>Speaks
+
+</ol>
+
+<h3>Down</h3>
+<ol>
+<li>Halts
+<li>Mean Time
+<li>Deserve
+<li>Fashion
+<li>Parched
+<li>Female swan
+<li value=9>Groove
+<li>Top Card
+<li value=14>Refined and Luxurious
+<li value=17>Rodent
+<li>First WOmen
+<li>Teaching Periods
+<li>Goveran
+<li value=21>Probability
+<li>Unbleached linen
+<li value=24>Turkish Governor
+
+</ol>
+</div>
+
+
+</body>
+</html>
