@@ -1,0 +1,25 @@
+table.crossword 
+{
+border-collapse: collapse; font-family: sans-serif
+}
+table.crossword td.cell, td.cell2 
+{
+border: 2px solid black; text-align: center; font-family: sans-serif; font-size: 8pt; padding-top: 0; padding-bottom: 0
+}
+table.crossword td.black 
+{
+background: black; border: 2px solid black
+}
+table.crossword sup 
+{
+float: left
+}
+table.crossword input 
+{
+border: 0; padding-left: 0; padding-right: 0; margin-left: 0; margin-right: 0; font-size: 12pt; font-weight: bold; width: 1.6em; text-align: center
+}
+h3 
+{
+margin-top: 0;
+color:blue;
+}
