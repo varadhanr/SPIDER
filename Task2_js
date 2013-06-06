@@ -1,0 +1,41 @@
+
+function check_Solution(solution_str)             //for checking the solution
+{
+
+    box = false
+    highlight = false
+    for (i = 1; i <= solution_str.length; i++) 
+  {
+		document.getElementById("square" + i).style.background = ""
+        if (document.getElementById("square" + i).value != solution_str.substr(i - 1, 1)) 
+		{
+			if (box == false) 
+			{
+				highlight = confirm("The solution is incorrect.  Would you like to highlight all incorrect entry?")
+				box = true
+			}
+
+			if (highlight == true) 
+			{
+				document.getElementById("square" + i).style.border = "3px solid red"
+				document.getElementById("square" + i).style.background = "#ff8888"
+	        }
+        }
+    }
+		if (box == true) 
+		{
+			return false;
+		}
+    alert("Solution correct!")
+    return true
+}
+
+function fill_Solution(solution_str)                //for filling in the solution
+{
+
+    for (var i = 1; i <= solution_str.length; i++) 
+	{
+		document.getElementById("square" + "" + i).style.background = ""
+		document.getElementById("square" + "" + i).value = solution_str.substr(i - 1, 1)
+    }
+}
